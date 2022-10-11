@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class DanaCloneTheme {
   // Colors
   static const Color mainBlue = Color(0xFF118EEA);
+  static const Color secondaryBlue = Color(0xFF86C6F6);
 
   // Primary Text Theme
   static TextTheme primaryTextTheme = TextTheme(
@@ -26,9 +27,10 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
     ),
+    // sudah: 0,
     headline5: GoogleFonts.notoSans(
       fontSize: 20,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w500,
     ),
     headline6: GoogleFonts.notoSans(
       fontSize: 17,
@@ -60,10 +62,12 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w500,
       letterSpacing: 1.25,
     ),
+    // sudah: Rp,
     caption: GoogleFonts.notoSans(
-      fontSize: 10,
-      fontWeight: FontWeight.w400,
+      fontSize: 13,
+      fontWeight: FontWeight.w500,
       letterSpacing: 0.4,
+      color: secondaryBlue,
     ),
     overline: GoogleFonts.notoSans(
       fontSize: 8,
@@ -75,9 +79,11 @@ class DanaCloneTheme {
   // Theme Data
   static ThemeData themeData() {
     return ThemeData(
+      brightness: Brightness.dark,
       appBarTheme: const AppBarTheme(
         backgroundColor: mainBlue,
       ),
+      primaryTextTheme: primaryTextTheme,
     );
   }
 }
