@@ -27,7 +27,7 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w400,
       letterSpacing: 0.25,
     ),
-    // sudah: 0,
+    // sudah: (appbar) 0,
     headline5: GoogleFonts.notoSans(
       fontSize: 20,
       fontWeight: FontWeight.w500,
