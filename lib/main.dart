@@ -1,4 +1,4 @@
-import 'package:dana_clone/utils/theme.dart';
+import 'package:dana_clone/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/home.dart';

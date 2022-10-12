@@ -1,5 +1,8 @@
+import 'package:dana_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import '../utils/utils.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -7,7 +10,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final primaryTextTheme = Theme.of(context).primaryTextTheme;
+
     return Scaffold(
+      backgroundColor: DanaCloneTheme.whiteBg,
+      extendBody: true,
       appBar: AppBar(
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
@@ -18,8 +24,8 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.only(left: 16),
           child: Row(
             children: [
-              const Image(
-                image: AssetImage('assets/icons/logo.png'),
+              Image(
+                image: AssetLocations.iconLocation('logo'),
                 width: 28,
               ),
               const SizedBox(width: 8),
@@ -33,19 +39,42 @@ class Home extends StatelessWidget {
                 style: primaryTextTheme.headline5,
               ),
               const SizedBox(width: 8),
-              const Image(
-                image: AssetImage('assets/icons/card.png'),
+              Image(
+                image: AssetLocations.iconLocation('card'),
                 width: 28,
               ),
             ],
           ),
         ),
-        actions: const [
+        actions: [
           Image(
-            image: AssetImage('assets/icons/message.png'),
-            width: 28,
+            image: AssetLocations.iconLocation('message'),
+            width: 30,
           ),
-          SizedBox(width: 16)
+          const SizedBox(width: 16)
+        ],
+      ),
+      body: ListView(
+        children: [
+          Container(
+            color: DanaCloneTheme.whiteBg,
+            height: 410,
+            child: Stack(
+              children: [
+                Container(
+                  height: 180,
+                  color: DanaCloneTheme.mainBlue,
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    HeaderWidget(),
+                    ServiceCardWidget(),
+                  ],
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
