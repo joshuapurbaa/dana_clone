@@ -14,6 +14,10 @@ class ServiceCardWidget extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return Card(
       shape: RoundedRectangleBorder(
+        side: BorderSide(
+          color: DanaCloneTheme.grey.withOpacity(0.4),
+          width: 0.3,
+        ),
         borderRadius: BorderRadius.circular(10),
       ),
       margin: const EdgeInsets.only(left: 16, right: 16),
@@ -54,8 +58,11 @@ class ServiceCardWidget extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(
+            height: 8,
+          ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 20),
+            padding: const EdgeInsets.only(bottom: 5, left: 22, right: 22),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               textBaseline: TextBaseline.ideographic,

@@ -10,7 +10,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final primaryTextTheme = Theme.of(context).primaryTextTheme;
-
     return Scaffold(
       backgroundColor: DanaCloneTheme.whiteBg,
       extendBody: true,
@@ -35,7 +34,7 @@ class Home extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                '10.000.000',
+                '0',
                 style: primaryTextTheme.headline5,
               ),
               const SizedBox(width: 8),
@@ -58,7 +57,7 @@ class Home extends StatelessWidget {
         children: [
           Container(
             color: DanaCloneTheme.whiteBg,
-            height: 410,
+            height: 400,
             child: Stack(
               children: [
                 Container(
@@ -75,6 +74,14 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
+          const FeedCardWidget(),
+          const WhatsNewCardWidget(),
+          const NearbyCardWidget(),
+          const MoreForYouCardWidget(),
+          const DanaProtectionCardWidget(),
+          const SizedBox(
+            height: 50,
+          )
         ],
       ),
     );
