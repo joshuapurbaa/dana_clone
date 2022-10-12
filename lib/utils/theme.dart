@@ -16,20 +16,6 @@ class DanaCloneTheme {
 
   // Primary Text Theme
   static TextTheme primaryTextTheme = TextTheme(
-    headline1: GoogleFonts.notoSans(
-      fontSize: 80,
-      fontWeight: FontWeight.w300,
-      letterSpacing: -1.5,
-    ),
-    headline2: GoogleFonts.notoSans(
-      fontSize: 50,
-      fontWeight: FontWeight.w300,
-      letterSpacing: -0.5,
-    ),
-    headline3: GoogleFonts.notoSans(
-      fontSize: 40,
-      fontWeight: FontWeight.w400,
-    ),
     //(Subheader) DANA Deals, Feed, Whats New, Nearaby: please allow
     headline4: GoogleFonts.notoSans(
       color: black,
@@ -42,32 +28,14 @@ class DanaCloneTheme {
       fontSize: 20,
       fontWeight: FontWeight.w500,
     ),
-    headline6: GoogleFonts.notoSans(
-      fontSize: 17,
-      fontWeight: FontWeight.w500,
-      letterSpacing: 0.15,
-    ),
+
     // HeaderWidget: Scan
     subtitle1: GoogleFonts.notoSans(
       fontSize: 15,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.2,
     ),
-    subtitle2: GoogleFonts.notoSans(
-      fontSize: 12,
-      fontWeight: FontWeight.w500,
-      letterSpacing: 0.1,
-    ),
-    bodyText1: GoogleFonts.notoSans(
-      fontSize: 13,
-      fontWeight: FontWeight.w400,
-      letterSpacing: 0.5,
-    ),
-    bodyText2: GoogleFonts.notoSans(
-      fontSize: 12,
-      fontWeight: FontWeight.w400,
-      letterSpacing: 0.25,
-    ),
+
     // Service Card: SERBU!
     button: GoogleFonts.notoSans(
       fontSize: 14,
@@ -80,19 +48,9 @@ class DanaCloneTheme {
       letterSpacing: 0.4,
       color: secondaryBlue,
     ),
-    overline: GoogleFonts.notoSans(
-      fontSize: 8,
-      fontWeight: FontWeight.w400,
-      letterSpacing: 1.5,
-    ),
   );
 
   static TextTheme textTheme = TextTheme(
-    headline1: GoogleFonts.roboto(
-      fontSize: 88,
-      fontWeight: FontWeight.w300,
-      letterSpacing: -1.5,
-    ),
     // Promo Voucher
     headline2: GoogleFonts.openSans(
       fontSize: 19,
@@ -169,11 +127,6 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w400,
       letterSpacing: 0.2,
       color: grey,
-    ),
-    overline: GoogleFonts.roboto(
-      fontSize: 9,
-      fontWeight: FontWeight.w400,
-      letterSpacing: 1.5,
     ),
   );
 
