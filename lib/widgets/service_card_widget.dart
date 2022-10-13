@@ -62,60 +62,63 @@ class ServiceCardWidget extends StatelessWidget {
             height: 8,
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 5, left: 22, right: 22),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              textBaseline: TextBaseline.ideographic,
-              crossAxisAlignment: CrossAxisAlignment.baseline,
+            padding: const EdgeInsets.only(
+              bottom: 20,
+              left: 22,
+              right: 22,
+            ),
+            child: Column(
               children: [
-                Column(
+                const SizedBox(
+                  height: 5,
+                ),
+                Row(
+                  textBaseline: TextBaseline.ideographic,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
                   children: const [
                     ServiceCardIcon(
                       iconName: 'electricity',
                       iconSubtitle: 'Electricity',
                     ),
                     ServiceCardIcon(
-                      iconName: 'item_digital',
-                      iconSubtitle: 'Item Digital',
-                    ),
-                  ],
-                ),
-                Column(
-                  children: const [
-                    ServiceCardIcon(
                       iconName: 'rewards',
                       iconSubtitle: 'Voucher A+\nRewards',
                     ),
-                    ServiceCardIcon(
-                      iconName: 'pulsa',
-                      iconSubtitle: 'Pulsa &\nData',
-                    ),
-                  ],
-                ),
-                Column(
-                  children: const [
                     ServiceCardIcon(
                       iconName: 'emas',
                       iconSubtitle: 'Emas',
                     ),
                     ServiceCardIcon(
-                      iconName: 'dana_kaget',
-                      iconSubtitle: 'DANA Kaget',
+                      iconName: 'goals',
+                      iconSubtitle: 'DANA Goals',
                     ),
                   ],
                 ),
-                Column(
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  textBaseline: TextBaseline.ideographic,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
                   children: const [
                     ServiceCardIcon(
-                      iconName: 'goals',
-                      iconSubtitle: 'DANA Goals',
+                      iconName: 'item_digital',
+                      iconSubtitle: 'Item Digital',
+                    ),
+                    ServiceCardIcon(
+                      iconName: 'pulsa',
+                      iconSubtitle: 'Pulsa &\nData',
+                    ),
+                    ServiceCardIcon(
+                      iconName: 'dana_kaget',
+                      iconSubtitle: 'DANA Kaget',
                     ),
                     ServiceCardIcon(
                       iconName: 'view_all',
                       iconSubtitle: 'View All',
-                    ),
+                    )
                   ],
-                )
+                ),
               ],
             ),
           ),

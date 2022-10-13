@@ -15,8 +15,7 @@ class ServiceCardIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    return SizedBox(
-      height: 100,
+    return Expanded(
       child: Column(
         children: [
           Image(
@@ -24,12 +23,13 @@ class ServiceCardIcon extends StatelessWidget {
             width: 30,
           ),
           const SizedBox(
-            height: 10,
+            height: 12,
           ),
           Text(
             iconSubtitle,
             style: textTheme.subtitle2,
             textAlign: TextAlign.center,
+            softWrap: false,
           ),
         ],
       ),
