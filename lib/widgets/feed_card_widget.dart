@@ -71,6 +71,7 @@ class _FeedCardWidgetState extends State<FeedCardWidget> {
                 return friendFeedList[index];
               },
               options: CarouselOptions(
+                scrollPhysics: const NeverScrollableScrollPhysics(),
                 reverse: true,
                 scrollDirection: Axis.vertical,
                 padEnds: true,

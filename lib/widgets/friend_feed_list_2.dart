@@ -1,3 +1,4 @@
+import 'package:dana_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/utils.dart';
@@ -12,9 +13,8 @@ class FriendFeedList2 extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return Row(
       children: [
-        Image(
-          image: AssetLocations.iconLocation('friend_1'),
-          width: 32,
+        const IconWithAnimationWidget(
+          iconName: 'friend_2',
         ),
         const SizedBox(
           width: 10,

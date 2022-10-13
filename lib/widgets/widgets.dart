@@ -13,3 +13,4 @@ export 'image_loop_slider_widget.dart';
 export 'friend_feed_list_1.dart';
 export 'friend_feed_list_2.dart';
 export 'friend_feed_list_3.dart';
+export 'icon_with_animation_widget.dart';

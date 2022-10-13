@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../utils/utils.dart';
+import 'widgets.dart';
 
 class FriendFeedList1 extends StatelessWidget {
   const FriendFeedList1({
@@ -12,9 +13,8 @@ class FriendFeedList1 extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return Row(
       children: [
-        Image(
-          image: AssetLocations.iconLocation('friend_2'),
-          width: 32,
+        const IconWithAnimationWidget(
+          iconName: 'friend_1',
         ),
         const SizedBox(
           width: 10,
