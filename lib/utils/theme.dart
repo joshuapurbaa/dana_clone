@@ -16,26 +16,24 @@ class DanaCloneTheme {
 
   // Primary Text Theme
   static TextTheme primaryTextTheme = TextTheme(
-    //(Subheader) DANA Deals, Feed, Whats New, Nearaby: please allow
+    // Service: DANA Deals, Feed, Whats New, Nearaby: please allow
     headline4: GoogleFonts.notoSans(
       color: black,
       fontSize: 20,
       fontWeight: FontWeight.w600,
       letterSpacing: 0.3,
     ),
-    // sudah: (appbar) 0,
+    // Appbar: 0,
     headline5: GoogleFonts.notoSans(
       fontSize: 20,
       fontWeight: FontWeight.w500,
     ),
-
     // HeaderWidget: Scan
     subtitle1: GoogleFonts.notoSans(
       fontSize: 15,
       fontWeight: FontWeight.w500,
       letterSpacing: 0.2,
     ),
-
     // Service Card: SERBU!
     button: GoogleFonts.notoSans(
       fontSize: 14,
@@ -80,7 +78,6 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w600,
       letterSpacing: 0.1,
     ),
-
     // Feed: Your Friend,
     headline6: GoogleFonts.roboto(
       fontSize: 16,
@@ -94,7 +91,6 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w500,
       color: orange,
     ),
-
     // Service: Electricity, MORE FOR YOU: Choose,
     subtitle2: GoogleFonts.roboto(
       fontSize: 15,
@@ -107,7 +103,6 @@ class DanaCloneTheme {
       color: grey,
       letterSpacing: -0.3,
     ),
-
     // Feed: find out, Find Dana
     bodyText2: GoogleFonts.roboto(
       fontSize: 13,
@@ -133,28 +128,28 @@ class DanaCloneTheme {
   // Theme Data
   static ThemeData themeData() {
     return ThemeData(
-      appBarTheme: const AppBarTheme(
-        backgroundColor: mainBlue,
-      ),
-      primaryTextTheme: primaryTextTheme,
-      textTheme: textTheme,
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
+        appBarTheme: const AppBarTheme(
           backgroundColor: mainBlue,
-          elevation: 0,
         ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          side: const BorderSide(
-            color: outlineButtonBlue,
+        primaryTextTheme: primaryTextTheme,
+        textTheme: textTheme,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: mainBlue,
+            elevation: 0,
           ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(5),
-          ),
-          textStyle: textTheme.button,
         ),
-      ),
-    );
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            side: const BorderSide(
+              color: outlineButtonBlue,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(5),
+            ),
+            textStyle: textTheme.button,
+          ),
+        ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData());
   }
 }

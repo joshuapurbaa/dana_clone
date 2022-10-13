@@ -1,5 +1,7 @@
+import 'package:dana_clone/provider/bottom_navigation_provider.dart';
 import 'package:dana_clone/utils/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'pages/home.dart';
 
@@ -13,11 +15,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = DanaCloneTheme.themeData();
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Dana Clone',
-      theme: theme,
-      home: const Home(),
+    return ChangeNotifierProvider(
+      create: (context) => BottomNavigationProvider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Dana Clone',
+        theme: theme,
+        home: const Home(),
+      ),
     );
   }
 }

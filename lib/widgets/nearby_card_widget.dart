@@ -1,4 +1,4 @@
-import 'package:dana_clone/utils/constants.dart';
+import 'package:dana_clone/utils/asset_locations.dart';
 import 'package:dana_clone/utils/theme.dart';
 import 'package:flutter/material.dart';
 
