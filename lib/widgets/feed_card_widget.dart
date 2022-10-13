@@ -1,11 +1,24 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dana_clone/utils/utils.dart';
 import 'package:flutter/material.dart';
 
-class FeedCardWidget extends StatelessWidget {
+import 'widgets.dart';
+
+class FeedCardWidget extends StatefulWidget {
   const FeedCardWidget({
     Key? key,
   }) : super(key: key);
 
+  @override
+  State<FeedCardWidget> createState() => _FeedCardWidgetState();
+}
+
+class _FeedCardWidgetState extends State<FeedCardWidget> {
+  List<Widget> friendFeedList = [
+    const FriendFeedList1(),
+    const FriendFeedList2(),
+    const FriendFeedList3(),
+  ];
   @override
   Widget build(BuildContext context) {
     final primaryTextTheme = Theme.of(context).primaryTextTheme;
@@ -22,7 +35,7 @@ class FeedCardWidget extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 25),
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -48,53 +61,27 @@ class FeedCardWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(
-              left: 20,
-              right: 20,
-              bottom: 25,
+              left: 25,
+              right: 25,
+              bottom: 20,
             ),
-            child: Row(
-              children: [
-                Image(
-                  image: AssetLocations.iconLocation('friend_2'),
-                  width: 32,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                Expanded(
-                  child: RichText(
-                    text: TextSpan(
-                      text: 'Your Friend',
-                      style: textTheme.headline6!.copyWith(
-                        fontWeight: FontWeight.w600,
-                      ),
-                      children: [
-                        TextSpan(
-                          text: ' just received',
-                          style: textTheme.headline6,
-                        ),
-                        TextSpan(
-                          text: ' Cashback',
-                          style: textTheme.headline6!.copyWith(
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        TextSpan(
-                          text: ' from',
-                          style: textTheme.headline6,
-                        ),
-                        TextSpan(
-                          text: ' Merchant',
-                          style: textTheme.headline6!.copyWith(
-                            fontWeight: FontWeight.w600,
-                            color: DanaCloneTheme.orange,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+            child: CarouselSlider.builder(
+              itemCount: friendFeedList.length,
+              itemBuilder: (context, index, realIndex) {
+                return friendFeedList[index];
+              },
+              options: CarouselOptions(
+                reverse: true,
+                scrollDirection: Axis.vertical,
+                padEnds: true,
+                autoPlayCurve: Curves.easeInOutCirc,
+                autoPlayInterval: const Duration(seconds: 3),
+                viewportFraction: 1,
+                height: 60,
+                enableInfiniteScroll: true,
+                initialPage: 2,
+                autoPlay: true,
+              ),
             ),
           )
         ],

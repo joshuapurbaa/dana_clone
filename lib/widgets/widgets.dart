@@ -9,3 +9,7 @@ export 'nearby_card_widget.dart';
 export 'more_for_you_card_widget.dart';
 export 'dana_protection_card_widget.dart';
 export 'horizontal_caption_and_icon.dart';
+export 'image_loop_slider_widget.dart';
+export 'friend_feed_list_1.dart';
+export 'friend_feed_list_2.dart';
+export 'friend_feed_list_3.dart';

@@ -75,6 +75,7 @@ class Home extends StatelessWidget {
             ),
           ),
           const FeedCardWidget(),
+          const ImageLoopSliderWidget(),
           const WhatsNewCardWidget(),
           const NearbyCardWidget(),
           const MoreForYouCardWidget(),
