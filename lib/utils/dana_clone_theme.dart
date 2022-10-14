@@ -13,6 +13,7 @@ class DanaCloneTheme {
   static const Color whiteBg = Color(0xFFF5F5F5);
   static const Color grey = Color(0xFF727272);
   static const Color white = Color(0xFFFFFFFF);
+  static const Color lightGrey = Color(0xFFE6E6E6);
 
   // Primary Text Theme
   static TextTheme primaryTextTheme = TextTheme(
@@ -109,7 +110,7 @@ class DanaCloneTheme {
       fontWeight: FontWeight.w400,
       color: secondaryBlack,
     ),
-    // Outline Button
+    // Outline Button, Navbar
     button: GoogleFonts.openSans(
       fontSize: 15,
       fontWeight: FontWeight.w600,
@@ -128,28 +129,28 @@ class DanaCloneTheme {
   // Theme Data
   static ThemeData themeData() {
     return ThemeData(
-        appBarTheme: const AppBarTheme(
+      appBarTheme: const AppBarTheme(
+        backgroundColor: mainBlue,
+      ),
+      primaryTextTheme: primaryTextTheme,
+      textTheme: textTheme,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
           backgroundColor: mainBlue,
+          elevation: 0,
         ),
-        primaryTextTheme: primaryTextTheme,
-        textTheme: textTheme,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: mainBlue,
-            elevation: 0,
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          side: const BorderSide(
+            color: outlineButtonBlue,
           ),
-        ),
-        outlinedButtonTheme: OutlinedButtonThemeData(
-          style: OutlinedButton.styleFrom(
-            side: const BorderSide(
-              color: outlineButtonBlue,
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5),
-            ),
-            textStyle: textTheme.button,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5),
           ),
+          textStyle: textTheme.button,
         ),
-        bottomNavigationBarTheme: const BottomNavigationBarThemeData());
+      ),
+    );
   }
 }

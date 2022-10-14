@@ -1,2 +1,2 @@
 export 'asset_locations.dart';
-export 'theme.dart';
+export 'dana_clone_theme.dart';

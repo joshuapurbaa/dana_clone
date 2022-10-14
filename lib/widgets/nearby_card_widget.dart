@@ -1,5 +1,5 @@
 import 'package:dana_clone/utils/asset_locations.dart';
-import 'package:dana_clone/utils/theme.dart';
+import 'package:dana_clone/utils/dana_clone_theme.dart';
 import 'package:flutter/material.dart';
 
 class NearbyCardWidget extends StatelessWidget {
