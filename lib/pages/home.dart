@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
               const Gap(h: 8),
               Image(
                 image: AssetLocations.iconLocation('card'),
-                width: 28,
+                width: 27,
               ),
             ],
           ),
@@ -57,11 +57,11 @@ class Home extends StatelessWidget {
         children: [
           Container(
             color: DanaCloneTheme.whiteBg,
-            height: 400,
+            height: 395,
             child: Stack(
               children: [
                 Container(
-                  height: 180,
+                  height: 205,
                   color: DanaCloneTheme.mainBlue,
                 ),
                 Column(
@@ -86,7 +86,7 @@ class Home extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: const SizedBox(
-        height: 90,
+        height: 95,
         child: CustomBottomNavBar(),
       ),
     );

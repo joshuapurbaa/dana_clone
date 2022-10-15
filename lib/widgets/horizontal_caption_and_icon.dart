@@ -19,7 +19,7 @@ class HorizontalCaptionAndIcon extends StatelessWidget {
       children: [
         Image(
           image: AssetLocations.iconLocation(iconName),
-          width: 30,
+          width: 25,
         ),
         const SizedBox(
           width: 7,

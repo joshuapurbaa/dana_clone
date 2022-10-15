@@ -24,7 +24,7 @@ class ServiceCardWidget extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(40, 35, 16, 10),
+            padding: const EdgeInsets.fromLTRB(40, 30, 16, 10),
             child: Row(
               children: [
                 Image(
@@ -58,12 +58,9 @@ class ServiceCardWidget extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(
-            height: 8,
-          ),
           Padding(
             padding: const EdgeInsets.only(
-              bottom: 20,
+              bottom: 10,
               left: 22,
               right: 22,
             ),
@@ -79,18 +76,22 @@ class ServiceCardWidget extends StatelessWidget {
                     ServiceCardIcon(
                       iconName: 'electricity',
                       iconSubtitle: 'Electricity',
+                      iconSize: 40,
                     ),
                     ServiceCardIcon(
                       iconName: 'rewards',
                       iconSubtitle: 'Voucher A+\nRewards',
+                      iconSize: 40,
                     ),
                     ServiceCardIcon(
                       iconName: 'emas',
                       iconSubtitle: 'Emas',
+                      iconSize: 40,
                     ),
                     ServiceCardIcon(
                       iconName: 'goals',
                       iconSubtitle: 'DANA Goals',
+                      iconSize: 40,
                     ),
                   ],
                 ),
@@ -104,18 +105,22 @@ class ServiceCardWidget extends StatelessWidget {
                     ServiceCardIcon(
                       iconName: 'item_digital',
                       iconSubtitle: 'Item Digital',
+                      iconSize: 25,
                     ),
                     ServiceCardIcon(
                       iconName: 'pulsa',
                       iconSubtitle: 'Pulsa &\nData',
+                      iconSize: 22,
                     ),
                     ServiceCardIcon(
                       iconName: 'dana_kaget',
                       iconSubtitle: 'DANA Kaget',
+                      iconSize: 25,
                     ),
                     ServiceCardIcon(
                       iconName: 'view_all',
                       iconSubtitle: 'View All',
+                      iconSize: 30,
                     )
                   ],
                 ),

@@ -14,9 +14,10 @@ dependencies:
   google_fonts: ^3.0.1
   carousel_slider: ^4.1.1
   simple_animations: ^5.0.0+2
-  flutter_svg: ^1.1.5
-  persistent_bottom_nav_bar: ^5.0.2
   provider: ^6.0.4
+  responsive_framework: ^0.2.0
+  bouncing_widget: ^2.0.0
+  
 
 dev_dependencies:
   flutter_test:
@@ -30,4 +31,3 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/svg/

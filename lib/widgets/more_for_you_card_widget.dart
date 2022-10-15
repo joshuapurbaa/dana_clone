@@ -19,7 +19,7 @@ class MoreForYouCardWidget extends StatelessWidget {
           width: 0.3,
         ),
       ),
-      margin: const EdgeInsets.only(left: 16, top: 10, right: 16),
+      margin: const EdgeInsets.only(left: 16, top: 8, right: 16),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
         child: Column(

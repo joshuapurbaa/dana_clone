@@ -7,10 +7,12 @@ class ServiceCardIcon extends StatelessWidget {
     Key? key,
     required this.iconName,
     required this.iconSubtitle,
+    required this.iconSize,
   }) : super(key: key);
 
   final String iconName;
   final String iconSubtitle;
+  final double iconSize;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class ServiceCardIcon extends StatelessWidget {
         children: [
           Image(
             image: AssetLocations.iconLocation(iconName),
-            width: 30,
+            width: iconSize,
           ),
           const SizedBox(
             height: 12,

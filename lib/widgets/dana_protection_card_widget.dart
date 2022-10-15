@@ -19,9 +19,9 @@ class DanaProtectionCardWidget extends StatelessWidget {
           width: 0.3,
         ),
       ),
-      margin: const EdgeInsets.only(left: 16, top: 10, right: 16),
+      margin: const EdgeInsets.only(left: 16, top: 8, right: 16),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 16, 16, 25),
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
         child: Column(
           children: [
             Row(
@@ -31,7 +31,7 @@ class DanaProtectionCardWidget extends StatelessWidget {
                   children: [
                     Image(
                       image: AssetLocations.iconLocation('dana_protection'),
-                      width: 30,
+                      width: 40,
                     ),
                     const SizedBox(
                       width: 5,
@@ -49,7 +49,7 @@ class DanaProtectionCardWidget extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 10,
+              height: 8,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -17,3 +17,4 @@ export 'icon_with_animation_widget.dart';
 export 'custom_bottom_navbar.dart';
 export 'icon_bottom_navbar.dart';
 export 'gap.dart';
+export 'button_pay.dart';

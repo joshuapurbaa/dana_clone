@@ -1,7 +1,7 @@
-import 'package:dana_clone/widgets/icon_bottom_navbar.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/utils.dart';
+import 'widgets.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({
@@ -30,10 +30,12 @@ class CustomBottomNavBar extends StatelessWidget {
                 IconBottomNavBar(
                   iconName: 'dana_nav_off',
                   label: 'Home',
+                  iconSize: 25,
                 ),
                 IconBottomNavBar(
                   iconName: 'history',
                   label: 'History',
+                  iconSize: 25,
                 ),
                 SizedBox(
                   width: 90,
@@ -41,47 +43,20 @@ class CustomBottomNavBar extends StatelessWidget {
                 IconBottomNavBar(
                   iconName: 'pocket',
                   label: 'Pocket',
+                  iconSize: 30,
                 ),
                 IconBottomNavBar(
                   iconName: 'profile',
                   label: 'Me',
+                  iconSize: 30,
                 ),
               ],
             ),
           ),
         ),
-        Align(
+        const Align(
           alignment: Alignment.center,
-          child: Container(
-            width: 80,
-            height: 80,
-            margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5),
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: DanaCloneTheme.lightGrey,
-              ),
-              color: DanaCloneTheme.mainBlue,
-              shape: BoxShape.circle,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image(
-                  image: AssetLocations.iconLocation('pay'),
-                  width: 30,
-                ),
-                const SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  'PAY',
-                  style: Theme.of(context).textTheme.button!.copyWith(
-                        color: DanaCloneTheme.white,
-                      ),
-                ),
-              ],
-            ),
-          ),
+          child: ButtonPay(),
         ),
       ],
     );

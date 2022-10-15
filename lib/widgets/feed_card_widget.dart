@@ -31,11 +31,11 @@ class _FeedCardWidgetState extends State<FeedCardWidget> {
           width: 0.3,
         ),
       ),
-      margin: const EdgeInsets.only(left: 16, top: 10, right: 16),
+      margin: const EdgeInsets.only(left: 16, top: 12, right: 16),
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 20),
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

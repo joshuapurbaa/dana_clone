@@ -7,6 +7,7 @@ class DanaCloneTheme {
   static const Color secondaryBlue = Color(0xFF86C6F6);
   static const Color outlineButtonBlue = Color(0xFF4281AD);
   static const Color thirdBlue = Color(0xFF4A61E3);
+  static const Color forthBlue = Color(0xFF3EA0E9);
   static const Color black = Color(0xFF000000);
   static const Color secondaryBlack = Color(0xFF313131);
   static const Color orange = Color(0xFFF0A446);

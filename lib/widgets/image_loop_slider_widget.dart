@@ -30,7 +30,7 @@ class _ImageLoopSliderWidgetState extends State<ImageLoopSliderWidget> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          margin: const EdgeInsets.only(top: 10),
+          margin: const EdgeInsets.only(top: 12),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
             child: Image(
@@ -45,7 +45,7 @@ class _ImageLoopSliderWidgetState extends State<ImageLoopSliderWidget> {
         autoPlayCurve: Curves.easeInOutCirc,
         autoPlayInterval: const Duration(seconds: 3),
         viewportFraction: 0.81,
-        height: 140,
+        height: 152,
         enableInfiniteScroll: true,
         initialPage: 2,
         autoPlay: true,

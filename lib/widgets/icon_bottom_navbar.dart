@@ -7,10 +7,12 @@ class IconBottomNavBar extends StatelessWidget {
     Key? key,
     required this.iconName,
     required this.label,
+    required this.iconSize,
   }) : super(key: key);
 
   final String iconName;
   final String label;
+  final double iconSize;
 
   @override
   Widget build(BuildContext context) {
@@ -18,26 +20,24 @@ class IconBottomNavBar extends StatelessWidget {
       child: InkWell(
         splashColor: Colors.grey,
         onTap: () {},
-        child: Container(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: Column(
-            children: [
-              Image(
-                image: AssetLocations.iconLocation(iconName),
-                width: 22,
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              Text(
-                label,
-                style: Theme.of(context).textTheme.button!.copyWith(
-                      color: DanaCloneTheme.grey,
-                      letterSpacing: -0.2,
-                    ),
-              ),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image(
+              image: AssetLocations.iconLocation(iconName),
+              width: iconSize,
+            ),
+            const SizedBox(
+              height: 2,
+            ),
+            Text(
+              label,
+              style: Theme.of(context).textTheme.button!.copyWith(
+                    color: DanaCloneTheme.grey,
+                    letterSpacing: -0.2,
+                  ),
+            ),
+          ],
         ),
       ),
     );

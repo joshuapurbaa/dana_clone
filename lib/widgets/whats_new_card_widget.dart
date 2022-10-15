@@ -20,7 +20,7 @@ class WhatsNewCardWidget extends StatelessWidget {
           width: 0.3,
         ),
       ),
-      margin: const EdgeInsets.only(left: 16, top: 10, right: 16),
+      margin: const EdgeInsets.only(left: 16, top: 8, right: 16),
       child: Column(
         children: [
           Padding(
