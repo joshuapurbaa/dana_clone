@@ -50,6 +50,7 @@ class DanaCloneTheme {
     ),
   );
 
+  // Secondary Text Theme
   static TextTheme textTheme = TextTheme(
     // Promo Voucher
     headline2: GoogleFonts.openSans(

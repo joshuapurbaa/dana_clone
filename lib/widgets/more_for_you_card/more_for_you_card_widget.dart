@@ -1,6 +1,7 @@
+import 'package:dana_clone/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class MoreForYouCardWidget extends StatelessWidget {
   const MoreForYouCardWidget({
@@ -46,9 +47,7 @@ class MoreForYouCardWidget extends StatelessWidget {
                 )
               ],
             ),
-            const SizedBox(
-              height: 16,
-            ),
+            const Gap(v: 16),
             Stack(
               children: [
                 ClipRRect(

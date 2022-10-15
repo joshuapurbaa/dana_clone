@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:simple_animations/simple_animations.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
-class IconWithAnimationWidget extends StatelessWidget {
-  const IconWithAnimationWidget({
+class TileWithAnimation extends StatelessWidget {
+  const TileWithAnimation({
     Key? key,
     required this.iconName,
   }) : super(key: key);
@@ -18,7 +18,7 @@ class IconWithAnimationWidget extends StatelessWidget {
         begin: Colors.transparent,
         end: Colors.redAccent,
       ),
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 3),
       builder: (context, value, child) {
         return Container(
           height: 38,

@@ -1,6 +1,7 @@
+import 'package:dana_clone/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class IconSubtitleHeader extends StatelessWidget {
   const IconSubtitleHeader({
@@ -21,9 +22,7 @@ class IconSubtitleHeader extends StatelessWidget {
           image: AssetLocations.iconLocation(iconName),
           width: 40,
         ),
-        const SizedBox(
-          height: 5,
-        ),
+        const Gap(v: 5),
         Text(
           iconSubtitle,
           style: primaryTextTheme.subtitle1,

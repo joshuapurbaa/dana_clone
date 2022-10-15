@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bouncing_widget/bouncing_widget.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class ButtonPay extends StatelessWidget {
   const ButtonPay({

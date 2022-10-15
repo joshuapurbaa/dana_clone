@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
-class CardWidgetAnimated extends StatefulWidget {
-  const CardWidgetAnimated({
+class AddCardWidgetAnimated extends StatefulWidget {
+  const AddCardWidgetAnimated({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<CardWidgetAnimated> createState() => _CardWidgetAnimatedState();
+  State<AddCardWidgetAnimated> createState() => _AddCardWidgetAnimatedState();
 }
 
-class _CardWidgetAnimatedState extends State<CardWidgetAnimated>
+class _AddCardWidgetAnimatedState extends State<AddCardWidgetAnimated>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation _positionAnimation;

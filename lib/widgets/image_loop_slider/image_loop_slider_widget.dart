@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class ImageLoopSliderWidget extends StatefulWidget {
   const ImageLoopSliderWidget({
@@ -45,7 +45,7 @@ class _ImageLoopSliderWidgetState extends State<ImageLoopSliderWidget> {
         autoPlayCurve: Curves.easeInOutCirc,
         autoPlayInterval: const Duration(seconds: 3),
         viewportFraction: 0.81,
-        height: 152,
+        height: 154,
         enableInfiniteScroll: true,
         initialPage: 2,
         autoPlay: true,

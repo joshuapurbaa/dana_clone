@@ -1,5 +1,6 @@
 import 'package:dana_clone/utils/asset_locations.dart';
 import 'package:dana_clone/utils/dana_clone_theme.dart';
+import 'package:dana_clone/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
 class NearbyCardWidget extends StatelessWidget {
@@ -33,9 +34,7 @@ class NearbyCardWidget extends StatelessWidget {
               'Find DANA merchants in your area!',
               style: textTheme.bodyText2,
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const Gap(),
             Container(
               padding: const EdgeInsets.fromLTRB(30, 40, 30, 30),
               decoration: BoxDecoration(
@@ -55,9 +54,7 @@ class NearbyCardWidget extends StatelessWidget {
                         'Please allow location\naccess so you can use the\nNearby feature.',
                         style: textTheme.headline4,
                       ),
-                      const SizedBox(
-                        height: 15,
-                      ),
+                      const Gap(v: 15),
                       OutlinedButton(
                         style: OutlinedButton.styleFrom(
                             padding:

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'pages/home.dart';
+import 'pages/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = DanaCloneTheme.themeData();
     return ChangeNotifierProvider(
-      create: (context) => BottomNavigationProvider(),
+      create: (context) => BottomNavProvider(),
       child: MaterialApp(
         builder: (context, child) => ResponsiveWrapper.builder(
           child,
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Dana Clone',
         theme: theme,
-        home: const Home(),
+        home: const MainPage(),
       ),
     );
   }

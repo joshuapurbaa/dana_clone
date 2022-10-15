@@ -1,6 +1,7 @@
+import 'package:dana_clone/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class HorizontalCaptionAndIcon extends StatelessWidget {
   const HorizontalCaptionAndIcon({
@@ -21,9 +22,7 @@ class HorizontalCaptionAndIcon extends StatelessWidget {
           image: AssetLocations.iconLocation(iconName),
           width: 25,
         ),
-        const SizedBox(
-          width: 7,
-        ),
+        const Gap(h: 7),
         Text(
           caption,
           style: textTheme.caption,

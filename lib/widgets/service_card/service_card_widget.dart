@@ -1,7 +1,8 @@
-import 'package:dana_clone/widgets/service_card_icon.dart';
+import 'package:dana_clone/widgets/gap.dart';
+import 'package:dana_clone/widgets/service_card/service_card_icon.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class ServiceCardWidget extends StatelessWidget {
   const ServiceCardWidget({
@@ -31,9 +32,7 @@ class ServiceCardWidget extends StatelessWidget {
                   image: AssetLocations.iconLocation('coupon'),
                   width: 40,
                 ),
-                const SizedBox(
-                  width: 25,
-                ),
+                const Gap(h: 25),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -66,9 +65,7 @@ class ServiceCardWidget extends StatelessWidget {
             ),
             child: Column(
               children: [
-                const SizedBox(
-                  height: 5,
-                ),
+                const Gap(v: 5),
                 Row(
                   textBaseline: TextBaseline.ideographic,
                   crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -76,28 +73,22 @@ class ServiceCardWidget extends StatelessWidget {
                     ServiceCardIcon(
                       iconName: 'electricity',
                       iconSubtitle: 'Electricity',
-                      iconSize: 40,
                     ),
                     ServiceCardIcon(
                       iconName: 'rewards',
                       iconSubtitle: 'Voucher A+\nRewards',
-                      iconSize: 40,
                     ),
                     ServiceCardIcon(
                       iconName: 'emas',
-                      iconSubtitle: 'Emas',
-                      iconSize: 40,
+                      iconSubtitle: 'eMAS',
                     ),
                     ServiceCardIcon(
                       iconName: 'goals',
                       iconSubtitle: 'DANA Goals',
-                      iconSize: 40,
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 10,
-                ),
+                const Gap(),
                 Row(
                   textBaseline: TextBaseline.ideographic,
                   crossAxisAlignment: CrossAxisAlignment.baseline,

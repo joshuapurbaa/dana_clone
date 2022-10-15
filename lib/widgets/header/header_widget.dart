@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets.dart';
+import '../widgets.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({super.key});

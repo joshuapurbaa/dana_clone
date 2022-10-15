@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
-import 'widgets.dart';
+import '../../utils/utils.dart';
+import '../widgets.dart';
 
 class WhatsNewCardWidget extends StatelessWidget {
   const WhatsNewCardWidget({
@@ -52,9 +52,7 @@ class WhatsNewCardWidget extends StatelessWidget {
                         image: AssetLocations.iconLocation('promos'),
                         width: 20,
                       ),
-                      const SizedBox(
-                        width: 5,
-                      ),
+                      const Gap(h: 5),
                       const Text('VIEW PROMOS'),
                     ],
                   ),
@@ -81,9 +79,7 @@ class WhatsNewCardWidget extends StatelessWidget {
             onPressed: () {},
             child: const Text('VIEW ALL NEWS'),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const Gap(),
         ],
       ),
     );

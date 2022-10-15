@@ -1,6 +1,7 @@
+import 'package:dana_clone/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class TileWhatsNew extends StatelessWidget {
   const TileWhatsNew({
@@ -29,9 +30,7 @@ class TileWhatsNew extends StatelessWidget {
             image: AssetLocations.iconLocation(iconLocation),
             width: 32,
           ),
-          const SizedBox(
-            width: 25,
-          ),
+          const Gap(h: 25),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -39,9 +38,7 @@ class TileWhatsNew extends StatelessWidget {
                 headline,
                 style: textTheme.headline5,
               ),
-              const SizedBox(
-                height: 5,
-              ),
+              const Gap(h: 5),
               Text(
                 bodyText,
                 style: textTheme.bodyText1,

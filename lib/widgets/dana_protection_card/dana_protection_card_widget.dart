@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
-import 'widgets.dart';
+import '../../utils/utils.dart';
+import '../widgets.dart';
 
 class DanaProtectionCardWidget extends StatelessWidget {
   const DanaProtectionCardWidget({
@@ -33,9 +33,7 @@ class DanaProtectionCardWidget extends StatelessWidget {
                       image: AssetLocations.iconLocation('dana_protection'),
                       width: 40,
                     ),
-                    const SizedBox(
-                      width: 5,
-                    ),
+                    const Gap(h: 5),
                     Text(
                       'DANA\nPROTECTION',
                       style: textTheme.headline3,
@@ -48,9 +46,7 @@ class DanaProtectionCardWidget extends StatelessWidget {
                 )
               ],
             ),
-            const SizedBox(
-              height: 8,
-            ),
+            const Gap(v: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [

@@ -1,13 +1,14 @@
+import 'package:dana_clone/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class ServiceCardIcon extends StatelessWidget {
   const ServiceCardIcon({
     Key? key,
     required this.iconName,
     required this.iconSubtitle,
-    required this.iconSize,
+    this.iconSize = 40,
   }) : super(key: key);
 
   final String iconName;
@@ -24,9 +25,7 @@ class ServiceCardIcon extends StatelessWidget {
             image: AssetLocations.iconLocation(iconName),
             width: iconSize,
           ),
-          const SizedBox(
-            height: 12,
-          ),
+          const Gap(v: 12),
           Text(
             iconSubtitle,
             style: textTheme.subtitle2,

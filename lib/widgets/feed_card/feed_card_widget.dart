@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dana_clone/utils/utils.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets.dart';
+import '../widgets.dart';
 
 class FeedCardWidget extends StatefulWidget {
   const FeedCardWidget({
@@ -19,6 +19,7 @@ class _FeedCardWidgetState extends State<FeedCardWidget> {
     const FriendFeedList2(),
     const FriendFeedList3(),
   ];
+
   @override
   Widget build(BuildContext context) {
     final primaryTextTheme = Theme.of(context).primaryTextTheme;
@@ -63,7 +64,7 @@ class _FeedCardWidgetState extends State<FeedCardWidget> {
             padding: const EdgeInsets.only(
               left: 25,
               right: 25,
-              bottom: 20,
+              bottom: 15,
             ),
             child: CarouselSlider.builder(
               itemCount: friendFeedList.length,

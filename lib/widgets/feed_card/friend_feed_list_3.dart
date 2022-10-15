@@ -1,10 +1,10 @@
+import 'package:dana_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/utils.dart';
-import 'widgets.dart';
+import '../../utils/utils.dart';
 
-class FriendFeedList1 extends StatelessWidget {
-  const FriendFeedList1({
+class FriendFeedList3 extends StatelessWidget {
+  const FriendFeedList3({
     Key? key,
   }) : super(key: key);
 
@@ -13,12 +13,8 @@ class FriendFeedList1 extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     return Row(
       children: [
-        const IconWithAnimationWidget(
-          iconName: 'friend_1',
-        ),
-        const SizedBox(
-          width: 10,
-        ),
+        const TileWithAnimation(iconName: 'friend_3'),
+        const Gap(),
         Expanded(
           child: RichText(
             text: TextSpan(
@@ -32,17 +28,7 @@ class FriendFeedList1 extends StatelessWidget {
                   style: textTheme.headline6,
                 ),
                 TextSpan(
-                  text: ' Cashback',
-                  style: textTheme.headline6!.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                TextSpan(
-                  text: ' from',
-                  style: textTheme.headline6,
-                ),
-                TextSpan(
-                  text: ' Merchant',
+                  text: ' DANA Kaget',
                   style: textTheme.headline6!.copyWith(
                     fontWeight: FontWeight.w600,
                     color: DanaCloneTheme.orange,
