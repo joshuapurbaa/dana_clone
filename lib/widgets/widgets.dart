@@ -18,3 +18,4 @@ export 'custom_bottom_navbar.dart';
 export 'icon_bottom_navbar.dart';
 export 'gap.dart';
 export 'button_pay.dart';
+export 'card_widget_animated.dart';

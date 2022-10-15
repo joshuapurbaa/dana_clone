@@ -37,10 +37,10 @@ class Home extends StatelessWidget {
                 '0',
                 style: primaryTextTheme.headline5,
               ),
-              const Gap(h: 8),
-              Image(
-                image: AssetLocations.iconLocation('card'),
-                width: 27,
+              const Gap(h: 10),
+              const SizedBox(
+                height: 30,
+                child: CardWidgetAnimated(),
               ),
             ],
           ),
