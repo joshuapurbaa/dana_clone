@@ -25,28 +25,29 @@ class ServiceCardWidget extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(40, 30, 16, 10),
+            padding: const EdgeInsets.fromLTRB(45, 30, 16, 15),
             child: Row(
               children: [
                 Image(
                   image: AssetLocations.iconLocation('coupon'),
-                  width: 40,
+                  width: 45,
                 ),
                 const Gap(h: 25),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'DANA Deals',
-                      style: primaryTextTheme.headline4,
-                    ),
-                    Text(
-                      'Jajan Hemat s/d 43%',
-                      style: textTheme.subtitle1,
-                    )
-                  ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'DANA Deals',
+                        style: primaryTextTheme.headline4,
+                      ),
+                      Text(
+                        'Jajan Hemat s/d 43%',
+                        style: textTheme.subtitle1,
+                      )
+                    ],
+                  ),
                 ),
-                const Spacer(),
                 ElevatedButton(
                   onPressed: () {},
                   child: Text(
@@ -65,7 +66,6 @@ class ServiceCardWidget extends StatelessWidget {
             ),
             child: Column(
               children: [
-                const Gap(v: 5),
                 Row(
                   textBaseline: TextBaseline.ideographic,
                   crossAxisAlignment: CrossAxisAlignment.baseline,

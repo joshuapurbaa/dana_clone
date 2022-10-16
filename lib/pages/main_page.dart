@@ -25,7 +25,7 @@ class MainPage extends StatelessWidget {
         actions: [
           Image(
             image: AssetLocations.iconLocation('message'),
-            width: 30,
+            width: 35,
           ),
           const Gap(h: 16),
         ],
