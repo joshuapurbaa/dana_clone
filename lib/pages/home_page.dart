@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
       children: [
         Container(
           color: DanaCloneTheme.whiteBg,
-          height: 395,
+          height: 390,
           child: Stack(
             children: [
               Container(

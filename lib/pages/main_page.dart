@@ -1,5 +1,4 @@
 import 'package:dana_clone/provider/bottom_navigation_provider.dart';
-import 'package:dana_clone/utils/list_of_pages.dart';
 import 'package:dana_clone/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,6 +18,7 @@ class MainPage extends StatelessWidget {
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
         ),
+        toolbarHeight: kToolbarHeight + 1,
         elevation: 0,
         titleSpacing: 0,
         title: const AppBarTitleWidget(),

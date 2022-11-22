@@ -30,7 +30,7 @@ class _ImageLoopSliderWidgetState extends State<ImageLoopSliderWidget> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          margin: const EdgeInsets.only(top: 12),
+          margin: const EdgeInsets.only(top: 12, left: 12),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
             child: Image(
@@ -41,11 +41,10 @@ class _ImageLoopSliderWidgetState extends State<ImageLoopSliderWidget> {
         );
       },
       options: CarouselOptions(
-        padEnds: true,
         autoPlayCurve: Curves.easeInOutCirc,
         autoPlayInterval: const Duration(seconds: 3),
         viewportFraction: 0.81,
-        height: 154,
+        height: 162,
         enableInfiniteScroll: true,
         initialPage: 2,
         autoPlay: true,

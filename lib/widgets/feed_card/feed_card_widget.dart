@@ -36,7 +36,7 @@ class _FeedCardWidgetState extends State<FeedCardWidget> {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 25),
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

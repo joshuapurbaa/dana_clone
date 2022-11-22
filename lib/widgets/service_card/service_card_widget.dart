@@ -25,7 +25,7 @@ class ServiceCardWidget extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(45, 30, 16, 15),
+            padding: const EdgeInsets.fromLTRB(45, 34, 16, 15),
             child: Row(
               children: [
                 Image(
@@ -60,7 +60,7 @@ class ServiceCardWidget extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(
-              bottom: 10,
+              bottom: 12,
               left: 22,
               right: 22,
             ),

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class AssetLocations {
   static ImageProvider iconLocation(String iconName) {

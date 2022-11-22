@@ -24,7 +24,7 @@ class WhatsNewCardWidget extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 25),
+            padding: const EdgeInsets.fromLTRB(16, 10, 16, 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
